@@ -1,0 +1,13 @@
+<div class="sphere-list" role="list">
+  @for (item of items; track item.name) {
+    <div
+      class="sphere-list__item"
+      [class.sphere-list__item--center]="item.position === 0"
+      [style.transform]="getTransform(item.position)"
+      [style.opacity]="getOpacity(item.position)"
+      role="listitem"
+    >
+      <span class="sphere-list__name">{{ item.name }}</span>
+    </div>
+  }
+</div>

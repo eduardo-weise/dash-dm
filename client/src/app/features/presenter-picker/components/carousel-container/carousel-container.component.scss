@@ -1,0 +1,17 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__loading,
+  &__empty {
+    color: var(--text-muted, #666);
+    margin: 0;
+  }
+
+  &__error {
+    color: var(--error, #c00);
+    margin: 0;
+  }
+}
