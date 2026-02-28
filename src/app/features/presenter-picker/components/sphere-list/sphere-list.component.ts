@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CarouselItem } from '../../models';
+import { CarouselItem } from '../../models/model';
 
 @Component({
 	selector: 'app-sphere-list',

@@ -2,7 +2,7 @@ import { Component, inject, computed } from '@angular/core';
 import { PresenterStateService } from '../../../../core/services/presenter-state.service';
 import { SphereListComponent } from '../sphere-list/sphere-list.component';
 import { CarouselControlsComponent } from '../carousel-controls/carousel-controls.component';
-import { CarouselItem } from '../../models';
+import { CarouselItem } from '../../models/model';
 
 @Component({
   selector: 'app-carousel-container',
