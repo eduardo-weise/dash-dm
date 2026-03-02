@@ -11,9 +11,10 @@
     font-weight: 500;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 
     &--primary {
+      /* This button's colors work well in both light and dark modes */
       background: #2563eb;
       color: #fff;
       border-color: #2563eb;
@@ -24,12 +25,13 @@
     }
 
     &--secondary {
+      /* Use CSS variables for colors that need to adapt to the theme */
       background: transparent;
-      color: #374151;
-      border-color: #d1d5db;
+      color: var(--text-color); /* Inherits from body, but can be explicit */
+      border-color: var(--secondary-border-color);
 
       &:hover {
-        background: #f3f4f6;
+        background: var(--secondary-hover-bg);
       }
     }
   }

@@ -3,12 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Adicionado para centralizar verticalmente */
   padding: 1rem;
   box-sizing: border-box;
-
-  &__header {
-    margin-bottom: 1.5rem;
-  }
 
   &__title {
     margin: 0;
@@ -17,12 +14,16 @@
   }
 
   &__main {
-    flex: 1;
+    /* flex: 1; Removido para permitir a centralização do conjunto */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     width: 100%;
     max-width: 32rem;
+  }
+
+  &__footer {
+    margin-top: 2rem;
   }
 }
